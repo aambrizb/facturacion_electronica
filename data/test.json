@@ -1,0 +1,60 @@
+{
+  "pac"             : "NO_TIMBRAR",
+  "Comprobante": {
+    "Version"           : "4.0",
+    "Fecha"             : "2024-07-17T23:59:59",
+    "Serie"             : "A",
+    "Folio"             : "1",
+    "CondicionesDePago" : "PAGO EN UNA SOLA EXHIBICION",
+    "SubTotal"          : 1,
+    "Moneda"            : "MXN",
+    "Total"             : 1.06,
+    "TipoDeComprobante" : "I",
+    "Exportacion"       : "01",
+    "MetodoPago"        : "PPD",
+    "FormaPago"         : "99",
+    "LugarExpedicion"   : "58180",
+    "Emisor": {
+      "Rfc"           : "EKU9003173C9",
+      "Nombre"        : "ESCUELA KEMPER URGATE",
+      "RegimenFiscal" : "601"
+    },
+    "Receptor": {
+      "Rfc"                     : "AIBJ8610188P5",
+      "Nombre"                  : "JESUS ALEJANDRO AMBRIZ BEDOLLA",
+      "DomicilioFiscalReceptor" : "58180",
+      "RegimenFiscalReceptor"   : "601",
+      "UsoCFDI"                 : "G01"
+    },
+    "Conceptos": [
+      {
+        "ClaveProdServ" : "50211503",
+        "Cantidad"      : 1,
+        "ClaveUnidad"   : "H87",
+        "Unidad"        : "Pieza",
+        "Descripcion"   : "Demo",
+        "ValorUnitario" : 1,
+        "Importe"       : 1,
+        "ObjetoImp"     : "02",
+        "traslados": [
+          {
+            "Base"       : 1,
+            "Importe"    : 0.16,
+            "Impuesto"   : "002",
+            "TasaOCuota" : 0.160000,
+            "TipoFactor" : "Tasa"
+          }
+        ],
+        "retenciones": [
+          {
+            "Base"       : 1,
+            "Impuesto"   : "001",
+            "TipoFactor" : "Tasa",
+            "TasaOCuota" : 0.100000,
+            "Importe"    : 0.10
+          }
+        ]
+      }
+    ]
+  }
+}
