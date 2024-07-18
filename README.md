@@ -9,6 +9,22 @@
 
 Utilidad que permite generar una estructura básica de XML sellado sin timbrar, para que se pueda integrar directamente
 con el PAC de tú preferencia.
+
+## Requerimientos
+
+| Requerimiento | Descripción                                                                                                                                                  |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| python3       | python 3.10 >                                                                                                                                                |
+| openssl       | brew install openssl                                                                                                                                         |
+| swig          | brew install swig                                                                                                                                            |
+| M2Crypto      | LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" SWIG_FEATURES="-I$(brew --prefix openssl)/include" pip install M2Crypto |
+
+## Instalación
+
+`
+pip install -r requiriments.txt
+`
+
 Dicha utilidad puede ser llamada de 2 formas distintas:
 
 a) Comando en Terminal
@@ -45,15 +61,6 @@ cfdi.save('output/FACT_1.xml')
 #
 # Here your implementation with specific PAC.
 ```
-## Requerimientos
-
-| Requerimiento | Descripción                                                                                                                                                  |
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| python3       | python 3.10 >                                                                                                                                                |
-| openssl       | brew install openssl                                                                                                                                         |
-| swig          | brew install swig                                                                                                                                            |
-| M2Crypto      | LDFLAGS="-L$(brew --prefix openssl)/lib" CFLAGS="-I$(brew --prefix openssl)/include" SWIG_FEATURES="-I$(brew --prefix openssl)/include" pip install M2Crypto |
-
 
 Actualmente he integrado con los siguientes PAC's, si requieres apoyo o asesoria para integrar con estos pac's o algún otro no dudes en contactarme.
 
