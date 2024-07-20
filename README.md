@@ -48,6 +48,8 @@ python timbrar_cfdi.py data/test.json data/CSD_Sucursal_1_EKU9003173C9_20230517_
 ### Importación Metodo
 
 ```
+from facturacion_electronica.CFDI import CFDIv40
+
 cfdi          = CFDIv40()
 cfdi.file_cer = 'data/CSD_Sucursal_1_EKU9003173C9_20230517_223850.cer'
 cfdi.file_key = 'data/CSD_Sucursal_1_EKU9003173C9_20230517_223850.key'
