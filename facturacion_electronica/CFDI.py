@@ -243,6 +243,12 @@ class CFDIv40:
     self.create_xml()
 
   def save(self,destination):
+
+    _tmp = os.path.dirname(destination)
+
+    if not os.path.exists(_tmp):
+      os.makedirs(_tmp)
+
     f = open(destination,'w')
     f.write(self.xml)
     f.close()
